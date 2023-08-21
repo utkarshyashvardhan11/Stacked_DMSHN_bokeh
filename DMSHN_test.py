@@ -20,7 +20,8 @@ import torch.nn.functional as F
 
 from torchvision.utils import save_image
 
-from skimage.measure import compare_psnr,compare_ssim
+# from skimage.measure import compare_psnr,compare_ssim
+from skimage.metrics import peak_signal_noise_ratio, structural_similarity
 from tqdm import tqdm
 
 import math
